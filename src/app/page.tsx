@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function PersonalOS() {
   return (
     <div className="min-h-screen bg-gray-50">
@@ -12,14 +14,14 @@ export default function PersonalOS() {
         </div>
         
         <ul className="space-y-1">
-          <li><a href="/" className="block py-2 px-3 text-sm text-gray-700 bg-gray-100 rounded font-medium">Start Here</a></li>
-          <li><a href="/identity" className="block py-2 px-3 text-sm text-gray-700 hover:bg-gray-100 rounded">Identity</a></li>
-          <li><a href="/beliefs" className="block py-2 px-3 text-sm text-gray-700 hover:bg-gray-100 rounded">Beliefs</a></li>
-          <li><a href="/systems" className="block py-2 px-3 text-sm text-gray-700 hover:bg-gray-100 rounded">Systems</a></li>
-          <li><a href="/projects" className="block py-2 px-3 text-sm text-gray-700 hover:bg-gray-100 rounded">Projects</a></li>
-          <li><a href="/now" className="block py-2 px-3 text-sm text-gray-700 hover:bg-gray-100 rounded">Now</a></li>
-          <li><a href="/library" className="block py-2 px-3 text-sm text-gray-700 hover:bg-gray-100 rounded">Library</a></li>
-          <li><a href="/guidance" className="block py-2 px-3 text-sm text-gray-700 hover:bg-gray-100 rounded">Guidance</a></li>
+          <li><Link href="/" className="block py-2 px-3 text-sm text-gray-700 bg-gray-100 rounded font-medium">Start Here</Link></li>
+          <li><Link href="/identity" className="block py-2 px-3 text-sm text-gray-700 hover:bg-gray-100 rounded">Identity</Link></li>
+          <li><Link href="/beliefs" className="block py-2 px-3 text-sm text-gray-700 hover:bg-gray-100 rounded">Beliefs</Link></li>
+          <li><Link href="/systems" className="block py-2 px-3 text-sm text-gray-700 hover:bg-gray-100 rounded">Systems</Link></li>
+          <li><Link href="/projects" className="block py-2 px-3 text-sm text-gray-700 hover:bg-gray-100 rounded">Projects</Link></li>
+          <li><Link href="/now" className="block py-2 px-3 text-sm text-gray-700 hover:bg-gray-100 rounded">Now</Link></li>
+          <li><Link href="/library" className="block py-2 px-3 text-sm text-gray-700 hover:bg-gray-100 rounded">Library</Link></li>
+          <li><Link href="/guidance" className="block py-2 px-3 text-sm text-gray-700 hover:bg-gray-100 rounded">Guidance</Link></li>
         </ul>
         
         <div className="mt-8">
@@ -55,7 +57,7 @@ export default function PersonalOS() {
           <div className="bg-blue-50 border-l-4 border-blue-400 p-6 rounded-r-lg">
             <p className="text-blue-800">
               <strong>What is a Personal OS?</strong> Think of it as the fusion of a personal wiki, 
-              brand bible, operating manual, and content ecosystem. It's my blueprint and broadcast—a 
+              brand bible, operating manual, and content ecosystem. It&apos;s my blueprint and broadcast—a 
               map of my inner world in public view.
             </p>
           </div>
@@ -63,61 +65,61 @@ export default function PersonalOS() {
 
         {/* Navigation Grid */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          <a href="/identity" className="group p-6 bg-white rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-md transition-all">
+          <Link href="/identity" className="group p-6 bg-white rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-md transition-all">
             <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-600 rounded mb-4 flex items-center justify-center">
               <span className="text-white text-sm font-bold">ID</span>
             </div>
             <h3 className="font-semibold text-gray-900 mb-2 group-hover:text-blue-600">Identity</h3>
             <p className="text-sm text-gray-600">Mission, values, archetypes, and core purpose</p>
-          </a>
+          </Link>
 
-          <a href="/beliefs" className="group p-6 bg-white rounded-lg border border-gray-200 hover:border-purple-300 hover:shadow-md transition-all">
+          <Link href="/beliefs" className="group p-6 bg-white rounded-lg border border-gray-200 hover:border-purple-300 hover:shadow-md transition-all">
             <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-purple-600 rounded mb-4 flex items-center justify-center">
               <span className="text-white text-sm font-bold">BE</span>
             </div>
             <h3 className="font-semibold text-gray-900 mb-2 group-hover:text-purple-600">Beliefs</h3>
             <p className="text-sm text-gray-600">Dynamic principles, frameworks, and living truths</p>
-          </a>
+          </Link>
 
-          <a href="/systems" className="group p-6 bg-white rounded-lg border border-gray-200 hover:border-green-300 hover:shadow-md transition-all">
+          <Link href="/systems" className="group p-6 bg-white rounded-lg border border-gray-200 hover:border-green-300 hover:shadow-md transition-all">
             <div className="w-8 h-8 bg-gradient-to-br from-green-500 to-green-600 rounded mb-4 flex items-center justify-center">
               <span className="text-white text-sm font-bold">SY</span>
             </div>
             <h3 className="font-semibold text-gray-900 mb-2 group-hover:text-green-600">Systems</h3>
             <p className="text-sm text-gray-600">Tools, habits, rituals, and creative practices</p>
-          </a>
+          </Link>
 
-          <a href="/projects" className="group p-6 bg-white rounded-lg border border-gray-200 hover:border-orange-300 hover:shadow-md transition-all">
+          <Link href="/projects" className="group p-6 bg-white rounded-lg border border-gray-200 hover:border-orange-300 hover:shadow-md transition-all">
             <div className="w-8 h-8 bg-gradient-to-br from-orange-500 to-orange-600 rounded mb-4 flex items-center justify-center">
               <span className="text-white text-sm font-bold">PR</span>
             </div>
             <h3 className="font-semibold text-gray-900 mb-2 group-hover:text-orange-600">Projects</h3>
             <p className="text-sm text-gray-600">Live and archived work, case studies</p>
-          </a>
+          </Link>
 
-          <a href="/now" className="group p-6 bg-white rounded-lg border border-gray-200 hover:border-red-300 hover:shadow-md transition-all">
+          <Link href="/now" className="group p-6 bg-white rounded-lg border border-gray-200 hover:border-red-300 hover:shadow-md transition-all">
             <div className="w-8 h-8 bg-gradient-to-br from-red-500 to-red-600 rounded mb-4 flex items-center justify-center">
               <span className="text-white text-sm font-bold">NO</span>
             </div>
             <h3 className="font-semibold text-gray-900 mb-2 group-hover:text-red-600">Now</h3>
             <p className="text-sm text-gray-600">Current focus, priorities, and active projects</p>
-          </a>
+          </Link>
 
-          <a href="/library" className="group p-6 bg-white rounded-lg border border-gray-200 hover:border-indigo-300 hover:shadow-md transition-all">
+          <Link href="/library" className="group p-6 bg-white rounded-lg border border-gray-200 hover:border-indigo-300 hover:shadow-md transition-all">
             <div className="w-8 h-8 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded mb-4 flex items-center justify-center">
               <span className="text-white text-sm font-bold">LI</span>
             </div>
             <h3 className="font-semibold text-gray-900 mb-2 group-hover:text-indigo-600">Library</h3>
             <p className="text-sm text-gray-600">Books, media, references, and influences</p>
-          </a>
+          </Link>
 
-          <a href="/guidance" className="group p-6 bg-white rounded-lg border border-gray-200 hover:border-teal-300 hover:shadow-md transition-all">
+          <Link href="/guidance" className="group p-6 bg-white rounded-lg border border-gray-200 hover:border-teal-300 hover:shadow-md transition-all">
             <div className="w-8 h-8 bg-gradient-to-br from-teal-500 to-teal-600 rounded mb-4 flex items-center justify-center">
               <span className="text-white text-sm font-bold">GU</span>
             </div>
             <h3 className="font-semibold text-gray-900 mb-2 group-hover:text-teal-600">Guidance</h3>
             <p className="text-sm text-gray-600">Book sessions, join newsletter, offerings</p>
-          </a>
+          </Link>
 
           <div className="p-6 bg-gray-50 rounded-lg border border-gray-200">
             <div className="w-8 h-8 bg-gray-400 rounded mb-4 flex items-center justify-center">
